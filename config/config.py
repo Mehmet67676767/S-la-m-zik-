@@ -12,9 +12,9 @@ load_dotenv()
 
 # Get it from my.telegram.org
 
-API_ID = int(getenv("API_ID", "21316907"))
+API_ID = int(getenv("API_ID", "24054192"))
 
-API_HASH = getenv("API_HASH", "5ea9b1cffa77e4b17245d62bcfdc867d")
+API_HASH = getenv("API_HASH", "ed9a8a61a1b4a1ad0915cbe87ba490ed")
 
 ## Get it from @Botfather in Telegram.
 
@@ -183,7 +183,7 @@ TG_VIDEO_FILESIZE_LIMIT = int(
 SET_CMDS = getenv("SET_CMDS", False)
 
 # You'll need a Pyrogram String Session for these vars. Generate String from our session generator bot @YukkiStringBot
-STRING1 = getenv("STRING_SESSION", "BAFFRSsAA4cyL7jTAsbvRIlTUIJeLOrXIWItPoSvRj3Zovwf_YVWFrWdHj0_5coFflGVlSOfMMgid9AXOL8ouvlBs8c-t27TrqhBCL9JeXUBPc9bBwE4OQE1ni6Y46yAUEBkUwC-lprO-_NH2nOAaX19FMbkqFKC-Z3F63iLge6B2jSUG4Gsd4VRTBUOeiwcz8pRISe5wsef2lrvGP7cv-p9o2Cf_l6991AhzwNUhUf06b7KtJ0lEbmEAwMsKyTNOHOiWB5agH6KX-Zky4vgvJ-vL7q1lHxfgOpH-KOneuNKhCpE-4nIwHRXuqipD1PEHWchOd8yUz4ovwqkk23_nDMMNl1W2AAAAAGyRahVAA)
+STRING1 = getenv("STRING_SESSION", "BAE6zO8AvYM3yzL7T33RFSNJcxNG795zXfbVQ8MVbr79FtI_o8C4vBlY1PQnzMqy0Mn3NCthUGoIMsF0TeHVtrttPhKmre7QR9qbKHScbpoezadPMKDDemLSG1hJqqdsQ_FjxffqMJ3B26Fxmrcy1YXZ9OqC6attRKNCI3u8AbiRliv8qP_Bb2MrOplpuMU1dahNxB3VUpXqLAnfarffXR10JnWGg4zMn3P0KpTDnQ0m-B-8fBl_SXMcWtGhPiZNqO58sQvSbtyjO7HqzAxoWY2dT5z_VOYmBctEcg55VQm2vWuatzSMtLo9L63jB7gZgDUXvw8pUOXx_EQJTV_Nk0GLwms9xAAAAAHEAg60AA")
 
 STRING2 = getenv("STRING_SESSION2", None)
 

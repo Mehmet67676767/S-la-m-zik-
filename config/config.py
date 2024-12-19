@@ -18,7 +18,7 @@ API_HASH = getenv("API_HASH", "897654e5459ae336b69254be5b878f06")
 
 ## Get it from @Botfather in Telegram.
 
-BOT_TOKEN = getenv("BOT_TOKEN", "6558463329:AAE8vVNk2UY1aKUGleDQXZCVskPYvLBTjlM")
+BOT_TOKEN = getenv("BOT_TOKEN", "6558463329:AAFtyUcHboiFaue79h4AfTUFUn5C8jjtOx8")
 
 # Database to save your chats and stats.
 
@@ -84,7 +84,7 @@ GIT_TOKEN = getenv("GIT_TOKEN", None)
 
 SUPPORT_CHANNEL = getenv(
 
-    "SUPPORT_CHANNEL", "https://t.me/Gezginduyuru") # Example:- https://t.me/ArchBots
+    "SUPPORT_CHANNEL", "https://t.me/elifmuzikbotdestek") # Example:- https://t.me/ArchBots
 
 SUPPORT_GROUP = getenv(
 
@@ -223,7 +223,7 @@ autoclean = []
 
 START_IMG_URL = getenv(
      "START_IMG_URL", 
-     "https://i.imghippo.com/files/dS0EY1726416364.jpg",
+     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFO9_G4Dav90XvGYF_4V-0-i_JWumHbb4pmw&usqp=CAU",
      
 
 )
@@ -232,7 +232,7 @@ PING_IMG_URL = getenv(
 
     "PING_IMG_URL",
 
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOVLFVl0gIGQWKZ1Z7B4Vqw_Z9-05Xr3aHIw&usqp=CAU",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFO9_G4Dav90XvGYF_4V-0-i_JWumHbb4pmw&usqp=CAU",
 
 )
 
@@ -240,7 +240,7 @@ PLAYLIST_IMG_URL = getenv(
 
     "PLAYLIST_IMG_URL",
 
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOVLFVl0gIGQWKZ1Z7B4Vqw_Z9-05Xr3aHIw&usqp=CAU",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFO9_G4Dav90XvGYF_4V-0-i_JWumHbb4pmw&usqp=CAU",
 
 )
 
@@ -248,7 +248,7 @@ GLOBAL_IMG_URL = getenv(
 
     "GLOBAL_IMG_URL",
 
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOVLFVl0gIGQWKZ1Z7B4Vqw_Z9-05Xr3aHIw&usqp=CAU",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFO9_G4Dav90XvGYF_4V-0-i_JWumHbb4pmw&usqp=CAU",
 
 )
 
@@ -256,7 +256,7 @@ STATS_IMG_URL = getenv(
 
     "STATS_IMG_URL",
 
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOVLFVl0gIGQWKZ1Z7B4Vqw_Z9-05Xr3aHIw&usqp=CAU",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFO9_G4Dav90XvGYF_4V-0-i_JWumHbb4pmw&usqp=CAU",
 
 )
 
@@ -264,7 +264,7 @@ TELEGRAM_AUDIO_URL = getenv(
 
     "TELEGRAM_AUDIO_URL",
 
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOVLFVl0gIGQWKZ1Z7B4Vqw_Z9-05Xr3aHIw&usqp=CAU",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFO9_G4Dav90XvGYF_4V-0-i_JWumHbb4pmw&usqp=CAU",
 
 )
 
@@ -272,7 +272,7 @@ TELEGRAM_VIDEO_URL = getenv(
 
     "TELEGRAM_VIDEO_URL",
 
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOVLFVl0gIGQWKZ1Z7B4Vqw_Z9-05Xr3aHIw&usqp=CAU",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFO9_G4Dav90XvGYF_4V-0-i_JWumHbb4pmw&usqp=CAU",
 
 )
 
@@ -280,7 +280,7 @@ STREAM_IMG_URL = getenv(
 
     "STREAM_IMG_URL",
 
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOVLFVl0gIGQWKZ1Z7B4Vqw_Z9-05Xr3aHIw&usqp=CAU",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFO9_G4Dav90XvGYF_4V-0-i_JWumHbb4pmw&usqp=CAU",
 
 )
 
@@ -288,7 +288,7 @@ SOUNCLOUD_IMG_URL = getenv(
 
     "SOUNCLOUD_IMG_URL",
 
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOVLFVl0gIGQWKZ1Z7B4Vqw_Z9-05Xr3aHIw&usqp=CAU",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFO9_G4Dav90XvGYF_4V-0-i_JWumHbb4pmw&usqp=CAU",
 
 )
 
@@ -296,7 +296,7 @@ YOUTUBE_IMG_URL = getenv(
 
     "YOUTUBE_IMG_URL",
 
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOVLFVl0gIGQWKZ1Z7B4Vqw_Z9-05Xr3aHIw&usqp=CAU",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFO9_G4Dav90XvGYF_4V-0-i_JWumHbb4pmw&usqp=CAU",
 
 )
 
@@ -304,7 +304,7 @@ SPOTIFY_ARTIST_IMG_URL = getenv(
 
     "SPOTIFY_ARTIST_IMG_URL",
 
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOVLFVl0gIGQWKZ1Z7B4Vqw_Z9-05Xr3aHIw&usqp=CAU",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFO9_G4Dav90XvGYF_4V-0-i_JWumHbb4pmw&usqp=CAU",
 
 )
 
@@ -312,7 +312,7 @@ SPOTIFY_ALBUM_IMG_URL = getenv(
 
     "SPOTIFY_ALBUM_IMG_URL",
 
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOVLFVl0gIGQWKZ1Z7B4Vqw_Z9-05Xr3aHIw&usqp=CAU",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFO9_G4Dav90XvGYF_4V-0-i_JWumHbb4pmw&usqp=CAU",
 
 )
 
@@ -320,7 +320,7 @@ SPOTIFY_PLAYLIST_IMG_URL = getenv(
 
     "SPOTIFY_PLAYLIST_IMG_URL",
 
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOVLFVl0gIGQWKZ1Z7B4Vqw_Z9-05Xr3aHIw&usqp=CAU",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFO9_G4Dav90XvGYF_4V-0-i_JWumHbb4pmw&usqp=CAU",
 
 )
 

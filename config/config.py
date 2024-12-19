@@ -136,9 +136,9 @@ GITHUB_REPO = getenv("GITHUB_REPO", None)
 
 # Spotify Client.. Get it from https://developer.spotify.com/dashboard
 
-SPOTIFY_CLIENT_ID = getenv("SPOTIFY_CLIENT_ID", "2041df9cbcd142cba804578a2cf85939")
+SPOTIFY_CLIENT_ID = getenv("SPOTIFY_CLIENT_ID", None)
 
-SPOTIFY_CLIENT_SECRET = getenv("SPOTIFY_CLIENT_SECRET", "80ffd296320e49299830e80b11e3bf73")
+SPOTIFY_CLIENT_SECRET = getenv("SPOTIFY_CLIENT_SECRET", None)
 
 # Maximum number of video calls allowed on bot. You can later set it via /set_video_limit on telegram
 

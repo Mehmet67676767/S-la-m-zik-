@@ -287,8 +287,8 @@ async def song_download_cb(client, CallbackQuery, _):
         )
 
         visit_button = InlineKeyboardButton(
-            text="⫷❝ 𝙈𝙔𝙏 𝘽𝙊𝙏𝙎 ❞⫸",
-            url=f"https://t.me/Myt_Bots"
+            text="🎧 acelya Music",
+            url=f"https://t.me/MusicAcelya"
         )
 
         visit_markup = InlineKeyboardMarkup(
@@ -299,7 +299,7 @@ async def song_download_cb(client, CallbackQuery, _):
             media=filename,
             caption=res,
             thumb=thumb_image_path,
-            performer="@TgramMuzikBot"
+            performer="@AcelyaMusicBot"
         )
         
         await mystic.edit_text(_["song_11"])
@@ -321,13 +321,13 @@ async def song_download_cb(client, CallbackQuery, _):
             f"⌛️ Süre : `{duration}`"
         )
         
-        channel_id = -1002175552878
+        channel_id = -1002260799344
         
         await app.send_audio(
             chat_id=channel_id,
             audio=filename,
             caption=rep,
-            performer="@TgramMuzikBot",
+            performer="@AcelyaMusicBot",
             thumb=thumb_image_path,
         )
         

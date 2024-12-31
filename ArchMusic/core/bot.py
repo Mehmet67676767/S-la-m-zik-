@@ -18,7 +18,8 @@ private_commands = [
 
 group_commands = [
     BotCommand("help", "️ℹ️Bot hakkında yardım. "),
-    BotCommand("oynat", "🎙 Müziği oynatır"),
+    BotCommand("reklamver", "❌Premium özelliktir."),
+    BotCommand("play", "🎙 Müziği oynatır"),
     BotCommand("voynat", "📺 Videoyu oynatır"),
     BotCommand("atla", "⏭️ Sonraki Parçaya Geçer"),
     BotCommand("duraklat", "⏸️ Çalan Parçayı Durdurur"),
@@ -30,12 +31,12 @@ group_commands = [
     BotCommand("gerisar", "⏪ Parçayı Geri Sarar"),
     BotCommand("playlist", "📖 Çalma Listenizi Gösterir"),
     BotCommand("bul", "📩 Seçtiğiniz Parçayı İndirir"),
-    BotCommand("oner", "🎵Şarkı önerir Armağan eder."),
+    BotCommand("sarki", "🎵Şarkı önerir Armağan eder."),
     BotCommand("ayarlar", "⚙️ Bot Ayarlarını Gösterir"),
     BotCommand("playmode", "⚙️Admin ayarları"),
     BotCommand("restart", "🔃 Botu Yeniden Başlatır"),
     BotCommand("reload", "❤️‍🔥 Yönetici Önbelleğini Günceller"),
-    BotCommand("etiket", "🏷️KOMUTLARI❤️"),
+    BotCommand("uye", "Grup Üyesi Satın Al🙋️"),
     BotCommand("tag", "🏷️Tek tek etiketler.ı"),
     BotCommand("utag", "🏷️Çoklu etiketler."),
     BotCommand("etag", "🏷️Emoji ile etiketler."),
@@ -43,26 +44,29 @@ group_commands = [
     BotCommand("sorutag", "🏷️Sorularla etiketler."),
     BotCommand("stag", "🏷️Sözlerle etiketler."),
     BotCommand("igtag", "🏷️İyigeceler sözleri ile etiketler."),
-    BotCommand("gtag", "🏷️Günaydın sözleri ile etiketler."),
+    BotCommand("guntag", "🏷️Günaydın sözleri ile etiketler."),
+    BotCommand("aktiftag", "Aktif üye etiketler."),
+    BotCommand("aktifcikar", "🦵[/aktifcikar @WR_MadBoyy]."),
+    BotCommand("aktifekle", "📝[/aktifekle @WR_MadBoyy]."),
+    BotCommand("aktiflist", "📝Aktif kullanıcı listesi"),
     BotCommand("cancel", "❌Etiket İşlemini Bitirir."),
     BotCommand("chatmode", "💬 sohbet aç - kapat."),
     BotCommand("eros", "💘Eros oku atar."),
-    BotCommand("anonimtag", "👨🏻‍🏫 Herkesi Anonim Oyununa Çağırır."),
-    BotCommand("kurttag", "Herkesi Kurt Oyununa Çağırır."),
     BotCommand("burc", "⚖️Burçlarınızı yorumlarım.ı"),
     BotCommand("mani", "📜Mani söylerim."),
+    BotCommand("saka", "😋Rasgele birine şaka yap."),
     BotCommand("slap", "👋Birini tokatlayın."),
     BotCommand("zar", "🎲Rastgele bir zar atın."),
     BotCommand("dart", "🎯Dart atar."),
+    BotCommand("slot", "🎰Şans slot'u çevirir."),
     BotCommand("bowling", "🎳Bowling atar."),
     BotCommand("futbol", "⚽Kaleye top atar."),
     BotCommand("basket", "🏀Basket atar."),
-    BotCommand("para", "🪙Rastgele bir para atın."),
-    BotCommand("saka", "😜Rastgele bir şaka gönderin"),
+    BotCommand("cash", "🪙Rastgele bir para atın."),
+    BotCommand("para", "😜Rastgele bir şaka gönderin"),
     BotCommand("tts", "🗣️Bir metni sese çevirir."),
     BotCommand("ping", "📈Bot'un ping değerini gösterir."),
-    
-    
+   
 ]
 
 async def set_commands(client):
@@ -74,7 +78,7 @@ async def set_commands(client):
 
 class ArchMusic(Client):
     def __init__(self):
-        LOGGER(__name__).info(f"Bot Başlatılıyor")
+        LOGGER(__name__).info(f"Bot Başlatılıyor..")
         super().__init__(
             "ArchMusic",
             api_id=config.API_ID,

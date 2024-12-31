@@ -8,82 +8,66 @@
 # All rights reserved.
 
 HELP_1 = """
-✶ Etiket Komutları
+**✶ EETİKET KOMUTLARI**
 
-» /tag - Tek tek etiketler.
+🏷️ /tag - Tek tek etiketler.
 
-» /utag - Çoklu etiketler.
+🏷️ /utag - Çoklu etiketler.
 
-» /etag - Emoji ile etiketler.
+🏷️ /etag - Emoji ile etiketler.
 
-» /igtag - iyi geceler mesajları ile etiketler.
+🏷️ /igtag - iyi geceler mesajları ile etiketler.
 
-» /guntag - günaydın mesajları ile etiketler.
+🏷️ /guntag - günaydın mesajları ile etiketler.
 
-» /btag - Bayrak ile etiketler.
+🏷️ /btag - Bayrak ile etiketler.
 
-» /sorutag - Sorularla etiketler.
+🏷️ /sorutag - Sorularla etiketler.
 
-» /ktag - Karakter ile etiketler.
+🏷️ /ktag - Karakter ile etiketler.
 
-» /stag - Sözlerle etiketler.
+🏷️ /stag - Sözlerle etiketler.
 
-» /stop - Etiket işlemini bitirir.
+🏷️ /stop - Etiket işlemini bitirir.
 
-» /chatmode - sohbet özelliğini açar.
+🏷️ /chatmode - sohbet özelliğini açar.
 
-» /slap - Tokat atar.
 
-» /soz - Söz atar.
 
-» /mani - Mani söyler.
-
-» /eros - Eros oku atar.
-
-» /tokat - birine Tokat atar.
-
-» /tts - Bir metni sese çevirir
-
-» /burc - Burçlarınızı yorumluyorım
 
 """
 
 
 HELP_2 = """
-🎰 Oyunlar
+**🎰EĞLENCE KOMUTLARI**
 
-• /cash - Slot oyununu oynamak için. 🎰
-   Örnek: /cash 50 veya /cash 50 2x
-   ❌ NOT: /cash 50 3x yaptığınızda, çarpan kadar paranız gider.
+❤️‍🔥  **/eros **| eros**  –  Eros oku atar.**
 
-• /fcash - Futbol oyununu oynamak için. ⚽️
-   Örnek: /fcash 100 veya /fcash 100 3x
+📝  **/burc  –  Burçlarınızı yorumlarım.**
 
-• /bcash - Basketbol oyununu oynamak için. 🏀
-   Örnek: /bcash 50 veya /bcash 50 2x
+✨ **/mani  –  Mani söylerim.
 
-• /bowling - Bowling atar.🎳
+👋  **/slap  –  Birini tokatlayın.**
 
-• /dart - Ok atar.🎯
+🎲  **/zar  –  Rastgele bir zar atın.**
 
-• /slap - Tokat atar.👋
+🎯  **/dart  –  Dart atar.**
 
-• /zar - Zar atarım.🎲
+🎰  **/slot  –  Şans slot'u çevirir.**
 
-• /para - Yazı tura atarım.🪙
+⚽️  **/futbol  –  Kaleye top atar.**
 
-• /gunluk - Günlük alacağınız bonus. 🤩
+🎳  **/bowling  –  Bowling atar.**
 
-• /bakiye - Bakiyenizi kontrol etmek için. 💰
+🪙  **/para  –  Rastgele bir para atın.**
 
-• /borc - Birine borç göndermek için. 💸
-   Örnek: /borc [Miktar] [Kullanıcı İD] veya Mesajı Yanıtla.
+👋  **/slap  –  Birini tokatlayın.**
 
-• /zenginler - En zengin kullanıcıları görmek için. 🤑
+🤣  **/saka  –  Rastgele bir şaka gönderin.**
 
-🆘 Komutlar: /cash, /fcash ve /bcash Oyunları sadece gruplarda çalışır.
-📌 Oyunları oynamak için bota start vermelisiniz.
-🏷️ @TgramMuzikBot
+📜  **/soz  –  Rastgele bir söz gönderin.** 
+
+📢  **/tts  –  Bir metni sese çevirir.**
 
 """
 
@@ -127,26 +111,7 @@ HELP_5 = """
 /aktifses : Aktif ses kontrol
 /aktifvideo : Aktif video kontrol
 
-**OYUN KOMUTLARI**
 
-•Global zenginler ve rakipleri gösterir.
-~ /zenginler veya /zengolar 🌐
-
-•Girdiğiniz guruplarda kullanıcılara 
-Tekrar günlük dağıtır.
-~ /jest 🎁
-
-•Bakiye ekler. Örnek: /ebakiye 100
-~ /ebakiye 💰
-
-•Bir kullanıcının bakiyesini siler
-~ /sil 🗑
-
-•Günlük bakiye.
-~ /gunluk🏧
-
-•Birine borç verir. Örnek: /borc 100
-~ /borc 💵
 """
 HELP_6 = """
 **CHAT BLACKLIST ÖZELLİĞİ:** [Sadece süper yöneticiler için]

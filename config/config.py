@@ -78,7 +78,7 @@ UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "main")
 
 # GIT TOKEN ( if your edited repo is private)
 
-GIT_TOKEN = getenv("GIT_TOKEN", "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")
+GIT_TOKEN = getenv("GIT_TOKEN", None)
 
 # Only  Links formats are  accepted for this Var value.
 
@@ -138,7 +138,7 @@ GITHUB_REPO = getenv("GITHUB_REPO", "https://github.com/Madboy0700/acelyamusic")
 
 SPOTIFY_CLIENT_ID = getenv("SPOTIFY_CLIENT_ID", "2041df9cbcd142cba804578a2cf85939")
 
-SPOTIFY_CLIENT_SECRET = getenv("SPOTIFY_CLIENT_SECRET", "80ffd296320e49299830e80b11e3bf73" )
+SPOTIFY_CLIENT_SECRET = getenv("SPOTIFY_CLIENT_SECRET", "80ffd296320e49299830e80b11e3bf73")
 
 # Maximum number of video calls allowed on bot. You can later set it via /set_video_limit on telegram
 
@@ -184,9 +184,9 @@ SET_CMDS = getenv("SET_CMDS", False)
 
 # You'll need a Pyrogram String Session for these vars. Generate String from our session generator bot @YukkiStringBot
 
-STRING1 = getenv("STRING_SESSION", "BQFCRaUAmjJcasIYrxdPjTyU5-oiCMBkfDmVvPQxNsvmyGDOJ6Rq2qNGazVt7Pf26BTLQj3Xr0JZdo8AOBZmj5rnsdMAYgzPYcxW_7cGLmq7mD0Vje9D-xmz9sgLqo2ZjB4b4JYYR3GaCPNdOUXRLu0p3bMrvk4ndlNAgqBJbATRN8w75w6ffsixk4FaKNG8WGq5lbK-wHh-barUfhCThfWadS-MU-xCBc0G-TIcwI7xPA2ncNnDzbeOrFT_V1w3EcpQcLePGXHl6Igqynla9MopR6qCKdo8VJTyZm12SLx0DHgiuaM_eiNebJtgxmJXBZozy7CnkpPlcRX2QKJ0wC38AE8ENwAAAAGUeo8-AA")
+STRING1 = getenv("STRING_SESSION", "BQFCRaUADmspO-6_NF_X1gl7XAF6H2qTE3oZIWNxheIBh3Xn0-GWj915xA3B-Lh8YpR7ZfVRW3fgyhsR0zMyG7j70KHzpbB8PCc0lvWWoQWx7ecRrf_JAH4haJkMceKvTOzvl_k584jBHUqBLXmbuzZLQvC7sibFCKql158Jt4rcKSMgg4Wa6GZfA1_DaRzst_jSyMOIe_kDgv2936Gs1ZHroS1jyZ0XQD_Ki6jAVkKzcwfVfpQhdtb0BdDSrAw-PADyB2RkIElFdYHTJg30FPAhp9LqFhPGbEl47H8Zk3rbs39VOStzoJGcFqk77-d3lHR1iKRh0FC8tryiEHDdH8xraklLfAAAAAGUeo8-AA")
 
-STRING2 = getenv("STRING_SESSION2", "BAFncJoADMYcc9HFycHqcH0pmCjpVqLUuWr6nKyg2L1K1LXBw3amLUHEVL7LRreqLCV5UVdpaBcd4EAX4Lqs554LKna2n2nQMufkPPLSlQLKsk0rYBee-JEZKtyu_CpaRh10SWDH39ug6cfHdLj-C0aQ_UsUqrWVgBU8zMSglVA_JOkP_CQ7ARDsKh2ruO8q8anYP3nfVe_10rBhrMxLZ_sPYxGerLOpTFOkPEEAaJQMXqg4omjvl88az03VVVNGpoRXG-M4R8boVNH5c3M2HPy5OCfAoCVjFSQ9Be-vQLKFBMFL1_uF1MEkJR2d3T3OseBiutcZhmC8niAO8FBeu38osl6GvQAAAAG_4fASAA")
+STRING2 = getenv("STRING_SESSION2", "BAFncJoAsX7xyTqfc_aoYzdjaKK6h69s0UQgu9B_44gf5S5j9R3AyYoGDT01jQAC7b6W_tf8wPhPR64UgErkdO2GRS_Fy6Jx6b-9rde7IFcEX4VNUj9jtiA0o8AvKvIyhrnxLwcqF_e3FpijoYwBl_3J6sGqCXN8fGiP2Wg6ugVV56q4lRcup0Y7TZCN_DzhJEsiYAP_W4XTE-NCEUpFzqWmkWK8zqbzpCk_Z9dDvIWgZSl5oxkFXhQXt0Hp1utfgK8tabvYMj87t-zqSfRTn50BS2irkY4Xid3Cpf9ZOu-zpUYfwx3yTpkTWfgOoTYcjJyXmxxKZvqlBSKVOqd4W-5eO_dY4gAAAAG_4fASAA")
 
 STRING3 = getenv("STRING_SESSION3", None)
 
@@ -224,7 +224,7 @@ autoclean = []
 
 START_IMG_URL = getenv(
      "START_IMG_URL", 
-     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxeQdhNfg2pqwKXXGxHXMqrWcdH-9_Pp9LDg&usqp=CAU",
+     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-g-vS7NmKnvDRXzzFrxlC1kbyBHk7IUJgJQ&usqp=CAU",
      
 
 )
@@ -233,7 +233,7 @@ PING_IMG_URL = getenv(
 
     "PING_IMG_URL",
 
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxeQdhNfg2pqwKXXGxHXMqrWcdH-9_Pp9LDg&usqp=CAU",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-g-vS7NmKnvDRXzzFrxlC1kbyBHk7IUJgJQ&usqp=CAU",
 
 )
 
@@ -241,7 +241,7 @@ PLAYLIST_IMG_URL = getenv(
 
     "PLAYLIST_IMG_URL",
 
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxeQdhNfg2pqwKXXGxHXMqrWcdH-9_Pp9LDg&usqp=CAU",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-g-vS7NmKnvDRXzzFrxlC1kbyBHk7IUJgJQ&usqp=CAU",
 
 )
 
@@ -249,7 +249,7 @@ GLOBAL_IMG_URL = getenv(
 
     "GLOBAL_IMG_URL",
 
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxeQdhNfg2pqwKXXGxHXMqrWcdH-9_Pp9LDg&usqp=CAU",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-g-vS7NmKnvDRXzzFrxlC1kbyBHk7IUJgJQ&usqp=CAU",
 
 )
 
@@ -257,7 +257,7 @@ STATS_IMG_URL = getenv(
 
     "STATS_IMG_URL",
 
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxeQdhNfg2pqwKXXGxHXMqrWcdH-9_Pp9LDg&usqp=CAU",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-g-vS7NmKnvDRXzzFrxlC1kbyBHk7IUJgJQ&usqp=CAU",
 
 )
 
@@ -265,7 +265,7 @@ TELEGRAM_AUDIO_URL = getenv(
 
     "TELEGRAM_AUDIO_URL",
 
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxeQdhNfg2pqwKXXGxHXMqrWcdH-9_Pp9LDg&usqp=CAU",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-g-vS7NmKnvDRXzzFrxlC1kbyBHk7IUJgJQ&usqp=CAU",
 
 )
 
@@ -273,7 +273,7 @@ TELEGRAM_VIDEO_URL = getenv(
 
     "TELEGRAM_VIDEO_URL",
 
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxeQdhNfg2pqwKXXGxHXMqrWcdH-9_Pp9LDg&usqp=CAU",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-g-vS7NmKnvDRXzzFrxlC1kbyBHk7IUJgJQ&usqp=CAU",
 
 )
 
@@ -281,7 +281,7 @@ STREAM_IMG_URL = getenv(
 
     "STREAM_IMG_URL",
 
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxeQdhNfg2pqwKXXGxHXMqrWcdH-9_Pp9LDg&usqp=CAU",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-g-vS7NmKnvDRXzzFrxlC1kbyBHk7IUJgJQ&usqp=CAU",
 
 )
 
@@ -289,7 +289,7 @@ SOUNCLOUD_IMG_URL = getenv(
 
     "SOUNCLOUD_IMG_URL",
 
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxeQdhNfg2pqwKXXGxHXMqrWcdH-9_Pp9LDg&usqp=CAU",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-g-vS7NmKnvDRXzzFrxlC1kbyBHk7IUJgJQ&usqp=CAU",
 
 )
 
@@ -297,7 +297,7 @@ YOUTUBE_IMG_URL = getenv(
 
     "YOUTUBE_IMG_URL",
 
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxeQdhNfg2pqwKXXGxHXMqrWcdH-9_Pp9LDg&usqp=CAU",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-g-vS7NmKnvDRXzzFrxlC1kbyBHk7IUJgJQ&usqp=CAU",
 
 )
 
@@ -305,7 +305,7 @@ SPOTIFY_ARTIST_IMG_URL = getenv(
 
     "SPOTIFY_ARTIST_IMG_URL",
 
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxeQdhNfg2pqwKXXGxHXMqrWcdH-9_Pp9LDg&usqp=CAU",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-g-vS7NmKnvDRXzzFrxlC1kbyBHk7IUJgJQ&usqp=CAU",
 
 )
 
@@ -313,7 +313,7 @@ SPOTIFY_ALBUM_IMG_URL = getenv(
 
     "SPOTIFY_ALBUM_IMG_URL",
 
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxeQdhNfg2pqwKXXGxHXMqrWcdH-9_Pp9LDg&usqp=CAU",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-g-vS7NmKnvDRXzzFrxlC1kbyBHk7IUJgJQ&usqp=CAU",
 
 )
 
@@ -321,7 +321,7 @@ SPOTIFY_PLAYLIST_IMG_URL = getenv(
 
     "SPOTIFY_PLAYLIST_IMG_URL",
 
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxeQdhNfg2pqwKXXGxHXMqrWcdH-9_Pp9LDg&usqp=CAU",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-g-vS7NmKnvDRXzzFrxlC1kbyBHk7IUJgJQ&usqp=CAU",
 
 )
 

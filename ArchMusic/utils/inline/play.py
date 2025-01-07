@@ -53,7 +53,7 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
         [
             InlineKeyboardButton(
                 text=f"⫷❝ 𝘽𝙊𝙏 𝘿𝙀𝙎𝙏𝙀𝙆 ❞⫸", 
-                url=f"https://t.me/elifmuzikbotdestek"
+                url=f"https://t.me/acelyaduyuruu"
             )
         ],
         [
@@ -147,7 +147,7 @@ def track_markup(_, videoid, user_id, channel, fplay):
         [
             InlineKeyboardButton(
                 text=f"⫷❝ 𝘽𝙊𝙏 𝘿𝙀𝙎𝙏𝙀𝙆 ❞⫸", 
-                url=f"https://t.me/elifmuzikbotdestek"
+                url=f"https://t.me/acelyaduyuruu"
             )
         ],
         

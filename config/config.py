@@ -42,11 +42,11 @@ SONG_DOWNLOAD_DURATION = int(
 
 # You'll need a Private Group ID for this.
 
-LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1002330130767"))
+LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1002352102473"))
 
 # A name for your Music bot.
 
-MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME","AcelyaMusicBot")
+MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME","ElifMusicBot")
 
 # Your User ID.
 
@@ -184,7 +184,7 @@ SET_CMDS = getenv("SET_CMDS", False)
 
 # You'll need a Pyrogram String Session for these vars. Generate String from our session generator bot @YukkiStringBot
 
-STRING1 = getenv("STRING_SESSION", "BAGDVIoAUbygiRtngHAXjVBDwIUbJ1vZZrW7suEYWl5lOqO06m3cSzwcaPht4ZFbUuTqJ2XITyWiqXUSgco8wnq7_fqCQQiU0XNJH-iL_lJ0LShm5zMc9IQitbv2XImAbiKi8jr73HuDlQ4QJ0KkwVQHkeWkhQ4erIBySzCXQDoyLzEs05HSnR6KW2E_oJVSUcNY-AJlR2EjtSMN3zmMIm2ZDb3pmaaG8b2VA965Ffqj4nmG_hM4iqOUT75DXL4Fmnr5wfSR-fgu83ziM9-OTRUA82FbPGx0FKnhFbbG7RvTo1joaesBUcZJET4i5brHsHkIbpcEzKoH_PU0YSSY-smoBM2wgAAAAAHY13fmAA")
+STRING1 = getenv("STRING_SESSION", "BAFF4WMAJ_uGemnBuRoTffeoPSbz_cxAfK7Y_Al5_nrHqoU-3N8H1_d5Ou2vbt9xWWE2_1KoP9im4L7_NQLBdPlL87hQVq2-15znj4h-SyolgZl4tbzEm7wqEptVdvxJbatHUzOZesN3ZUT9o4dcCCDzWLpv6LkbfGUY6djsd-0ULhExy4wsjEcMoByIr9laTVQ6ll2b5c6BqSGUvqhk-rfZiuJPg7UkUEir3jLR4y3ZsmOb7uTQZX018D1rrJ16aYhRWfmxss7ujdWp_Tqz2rncRD00tBPDbXA8WRvY8ocvDeDm03S5A5bghn_Z0zZ8OTF6ELk16E4V8ySN_vjVBDJXhBdQRwAAAAHJzK_DAA")
 
 STRING2 = getenv("STRING_SESSION2", None)
 

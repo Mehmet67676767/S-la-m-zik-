@@ -18,7 +18,6 @@ private_commands = [
 
 group_commands = [
     BotCommand("help", "️ℹ️Bot hakkında yardım. "),
-    BotCommand("reklamver", "❌Premium özelliktir."),
     BotCommand("play", "🎙 Müziği oynatır"),
     BotCommand("voynat", "📺 Videoyu oynatır"),
     BotCommand("atla", "⏭️ Sonraki Parçaya Geçer"),
@@ -36,7 +35,6 @@ group_commands = [
     BotCommand("playmode", "⚙️Admin ayarları"),
     BotCommand("restart", "🔃 Botu Yeniden Başlatır"),
     BotCommand("reload", "❤️‍🔥 Yönetici Önbelleğini Günceller"),
-    BotCommand("uye", "Grup Üyesi Satın Al🙋️"),
     BotCommand("tag", "🏷️Tek tek etiketler.ı"),
     BotCommand("utag", "🏷️Çoklu etiketler."),
     BotCommand("etag", "🏷️Emoji ile etiketler."),
@@ -45,10 +43,6 @@ group_commands = [
     BotCommand("stag", "🏷️Sözlerle etiketler."),
     BotCommand("igtag", "🏷️İyigeceler sözleri ile etiketler."),
     BotCommand("guntag", "🏷️Günaydın sözleri ile etiketler."),
-    BotCommand("aktiftag", "Aktif üye etiketler."),
-    BotCommand("aktifcikar", "🦵[/aktifcikar @WR_MadBoyy]."),
-    BotCommand("aktifekle", "📝[/aktifekle @WR_MadBoyy]."),
-    BotCommand("aktiflist", "📝Aktif kullanıcı listesi"),
     BotCommand("cancel", "❌Etiket İşlemini Bitirir."),
     BotCommand("chatmode", "💬 sohbet aç - kapat."),
     BotCommand("eros", "💘Eros oku atar."),

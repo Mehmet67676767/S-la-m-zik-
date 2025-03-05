@@ -18,7 +18,7 @@ API_HASH = getenv("API_HASH", "0f200e155577fe336b05590804054643")
 
 ## Get it from @Botfather in Telegram.
 
-BOT_TOKEN = getenv("BOT_TOKEN", "7685513723:AAHyS2fBiTfHIWcscfi4jAII5SkesTlt60U")
+BOT_TOKEN = getenv("BOT_TOKEN", "7849503679:AAGl_Uc-0brNkC1w1umgDlxzVApB1uSShyU")
 
 # Database to save your chats and stats.
 
@@ -42,11 +42,11 @@ SONG_DOWNLOAD_DURATION = int(
 
 # You'll need a Private Group ID for this.
 
-LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1002379830096"))
+LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1002338798159"))
 
 # A name for your Music bot.
 
-MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME","SohbetBoxMusicBot")
+MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME","ArthurMusicBot")
 
 # Your User ID.
 

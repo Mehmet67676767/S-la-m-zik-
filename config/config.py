@@ -70,7 +70,7 @@ UPSTREAM_REPO = getenv(
 
     "UPSTREAM_REPO",
 
-    "https://github.com/Madboy0700/acelyamusic",
+    "https://github.com/Madboy0700/sohbetbox",
 
 )
 
@@ -84,11 +84,11 @@ GIT_TOKEN = getenv("GIT_TOKEN", None)
 
 SUPPORT_CHANNEL = getenv(
 
-    "SUPPORT_CHANNEL", "https://t.me/AcelyaDuyuruu") # Example:- https://t.me/ArchBots
+    "SUPPORT_CHANNEL", "https://t.me/boxmusicduyuru") # Example:- https://t.me/ArchBots
 
 SUPPORT_GROUP = getenv(
 
-    "SUPPORT_GROUP", "https://t.me/AcelyaDuyuruu")  # Example:- https://t.me/ARCH_SUPPORTS
+    "SUPPORT_GROUP", "https://t.me/resmisohbetbox")  # Example:- https://t.me/ARCH_SUPPORTS
 
 # Set it in True if you want to leave your assistant after a certain amount of time. [Set time via AUTO_LEAVE_ASSISTANT_TIME]
 
@@ -132,7 +132,7 @@ TELEGRAM_DOWNLOAD_EDIT_SLEEP = int(getenv("TELEGRAM_EDIT_SLEEP", "5"))
 
 # Your Github Repo.. Will be shown on /start Command
 
-GITHUB_REPO = getenv("GITHUB_REPO", "https://github.com/Madboy0700/acelyamusic") 
+GITHUB_REPO = getenv("GITHUB_REPO", "https://github.com/Madboy0700/sohbetbox") 
 
 # Spotify Client.. Get it from https://developer.spotify.com/dashboard
 

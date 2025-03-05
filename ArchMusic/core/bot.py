@@ -1,3 +1,5 @@
+
+
 import sys
 
 from pyrogram import Client
@@ -44,15 +46,23 @@ class ArchMusic(Client):
                 try:
                     await self.set_bot_commands(
                         [
-                            BotCommand("ping", "Check that bot is alive or dead"),
-                            BotCommand("play", "Starts playing the requested song"),
-                            BotCommand("skip", "Moves to the next track in queue"),
-                            BotCommand("pause", "Pause the current playing song"),
-                            BotCommand("resume", "Resume the paused song"),
-                            BotCommand("end", "Clear the queue and leave voice chat"),
-                            BotCommand("shuffle", "Randomly shuffles the queued playlist."),
-                            BotCommand("playmode", "Allows you to change the default playmode for your chat"),
-                            BotCommand("settings", "Open the settings of the music bot for your chat.")
+    BotCommand("play", "🎙 Müziği oynatır"),
+    BotCommand("voynat", "📺 Videoyu oynatır"),
+    BotCommand("atla", "⏭️ Sonraki Parçaya Geçer"),
+    BotCommand("duraklat", "⏸️ Çalan Parçayı Durdurur"),
+    BotCommand("devam", "▶️ Çalan Parçayı Devam Ettirir"),
+    BotCommand("son", "⏹️ Çalan Parçayı Kapatır"),
+    BotCommand("karistir", "🔀 Çalan Parçayı Karıştırır"),
+    BotCommand("dongu", "🔄 Çalan Parçayı Tekrarlar"),
+    BotCommand("ilerisar", "⏩ Parçayı İleri Sarar"),
+    BotCommand("gerisar", "⏪ Parçayı Geri Sarar"),
+    BotCommand("playlist", "📖 Çalma Listenizi Gösterir"),
+    BotCommand("bul", "📩 Seçtiğiniz Parçayı İndirir"),
+    BotCommand("sarki", "🎵Şarkı önerir Armağan eder."),
+    BotCommand("ayarlar", "⚙️ Bot Ayarlarını Gösterir"),
+    BotCommand("playmode", "⚙️Admin ayarları"),
+    BotCommand("restart", "🔃 Botu Yeniden Başlatır"),
+    BotCommand("reload", "❤️‍🔥 Yönetici Önbelleğini Günceller"),
                         ]
                     )
                 except:

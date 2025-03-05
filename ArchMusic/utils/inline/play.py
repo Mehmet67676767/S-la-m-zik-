@@ -53,7 +53,7 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
         [
             InlineKeyboardButton(
                 text=f"Duyuru", 
-                url=f"https://t.me/Acelyaduyuruu"
+                url=f"https://t.me/boxmusicduyuru"
             )
         ],
         [
@@ -76,7 +76,7 @@ def telegram_markup_timer(_, chat_id, played, dur, videoid):
         [
             InlineKeyboardButton(
                 text=f"Duyuru", 
-                url=f"https://t.me/Acelyaduyuruu"
+                url=f"https://t.me/boxmusicduyuru"
             )
         ],
         
@@ -106,7 +106,7 @@ def stream_markup(_, videoid, chat_id):
         [
             InlineKeyboardButton(
                 text=f"Duyuru", 
-                url=f"https://t.me/Acelyaduyuruu"
+                url=f"https://t.me/boxmusicduyuru"
             )
         ],
         
@@ -147,7 +147,7 @@ def track_markup(_, videoid, user_id, channel, fplay):
         [
             InlineKeyboardButton(
                 text=f"Duyuru", 
-                url=f"https://t.me/Acelyaduyuruu"
+                url=f"https://t.me/boxmusicduyuru"
             )
         ],
         
@@ -170,7 +170,7 @@ def playlist_markup(_, videoid, user_id, ptype, channel, fplay):
         [
             InlineKeyboardButton(
                 text=f"Duyuru", 
-                url=f"https://t.me/Acelyaduyuruu"
+                url=f"https://t.me/boxmusicduyuru"
             )
         ],
         

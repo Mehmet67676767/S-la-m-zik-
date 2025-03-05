@@ -54,7 +54,7 @@ SUDOUSERS_COMMAND : ["yetkililist"]
 
 # Reklam Komutları
 
-BROADCAST_COMMAND : ["sedat", "madboy", ]
+BROADCAST_COMMAND : ["gargamel", "madboy", ]
 
 #Ban Komutları
 

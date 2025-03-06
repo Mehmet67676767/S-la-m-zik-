@@ -224,7 +224,7 @@ autoclean = []
 
 START_IMG_URL = getenv(
      "START_IMG_URL", 
-     "https://pbs.twimg.com/media/GlVZmh4WMAIKf-c?format=jpg&name=small",
+     "https://pbs.twimg.com/media/GlYNUMFWEAA4jEK?format=jpg&name=small",
      
 
 )
@@ -233,7 +233,7 @@ PING_IMG_URL = getenv(
 
     "PING_IMG_URL",
 
-    "https://pbs.twimg.com/media/GlVZmh4WMAIKf-c?format=jpg&name=small",
+    "https://pbs.twimg.com/media/GlYNUMFWEAA4jEK?format=jpg&name=small",
 
 )
 
@@ -241,7 +241,7 @@ PLAYLIST_IMG_URL = getenv(
 
     "PLAYLIST_IMG_URL",
 
-    "https://pbs.twimg.com/media/GlVZmh4WMAIKf-c?format=jpg&name=small",
+    "https://pbs.twimg.com/media/GlYNUMFWEAA4jEK?format=jpg&name=small",
 
 )
 
@@ -249,7 +249,7 @@ GLOBAL_IMG_URL = getenv(
 
     "GLOBAL_IMG_URL",
 
-    "https://pbs.twimg.com/media/GlVZmh4WMAIKf-c?format=jpg&name=small",
+    "https://pbs.twimg.com/media/GlYNUMFWEAA4jEK?format=jpg&name=small",
 
 )
 
@@ -257,7 +257,7 @@ STATS_IMG_URL = getenv(
 
     "STATS_IMG_URL",
 
-    "https://pbs.twimg.com/media/GlVZmh4WMAIKf-c?format=jpg&name=small",
+    "https://pbs.twimg.com/media/GlYNUMFWEAA4jEK?format=jpg&name=small",
 
 )
 
@@ -265,7 +265,7 @@ TELEGRAM_AUDIO_URL = getenv(
 
     "TELEGRAM_AUDIO_URL",
 
-    "https://pbs.twimg.com/media/GlVZmh4WMAIKf-c?format=jpg&name=small",
+    "https://pbs.twimg.com/media/GlYNUMFWEAA4jEK?format=jpg&name=small",
 
 )
 
@@ -273,7 +273,7 @@ TELEGRAM_VIDEO_URL = getenv(
 
     "TELEGRAM_VIDEO_URL",
 
-    "https://pbs.twimg.com/media/GlVZmh4WMAIKf-c?format=jpg&name=small",
+    "https://pbs.twimg.com/media/GlYNUMFWEAA4jEK?format=jpg&name=small",
 
 )
 
@@ -281,7 +281,7 @@ STREAM_IMG_URL = getenv(
 
     "STREAM_IMG_URL",
 
-    "https://pbs.twimg.com/media/GlVZmh4WMAIKf-c?format=jpg&name=small",
+    "https://pbs.twimg.com/media/GlYNUMFWEAA4jEK?format=jpg&name=small",
 
 )
 
@@ -289,7 +289,7 @@ SOUNCLOUD_IMG_URL = getenv(
 
     "SOUNCLOUD_IMG_URL",
 
-    "https://pbs.twimg.com/media/GlVZmh4WMAIKf-c?format=jpg&name=small",
+    "https://pbs.twimg.com/media/GlYNUMFWEAA4jEK?format=jpg&name=small",
 
 )
 
@@ -297,7 +297,7 @@ YOUTUBE_IMG_URL = getenv(
 
     "YOUTUBE_IMG_URL",
 
-    "https://pbs.twimg.com/media/GlVZmh4WMAIKf-c?format=jpg&name=small",
+    "https://pbs.twimg.com/media/GlYNUMFWEAA4jEK?format=jpg&name=small",
 
 )
 
@@ -305,7 +305,7 @@ SPOTIFY_ARTIST_IMG_URL = getenv(
 
     "SPOTIFY_ARTIST_IMG_URL",
 
-    "https://pbs.twimg.com/media/GlVZmh4WMAIKf-c?format=jpg&name=small",
+    "https://pbs.twimg.com/media/GlYNUMFWEAA4jEK?format=jpg&name=small",
 
 )
 
@@ -313,7 +313,7 @@ SPOTIFY_ALBUM_IMG_URL = getenv(
 
     "SPOTIFY_ALBUM_IMG_URL",
 
-    "https://pbs.twimg.com/media/GlVZmh4WMAIKf-c?format=jpg&name=small",
+    "https://pbs.twimg.com/media/GlYNUMFWEAA4jEK?format=jpg&name=small",
 
 )
 
@@ -321,7 +321,7 @@ SPOTIFY_PLAYLIST_IMG_URL = getenv(
 
     "SPOTIFY_PLAYLIST_IMG_URL",
 
-    "https://pbs.twimg.com/media/GlVZmh4WMAIKf-c?format=jpg&name=small",
+    "https://pbs.twimg.com/media/GlYNUMFWEAA4jEK?format=jpg&name=small",
 
 )
 

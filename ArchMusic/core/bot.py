@@ -1,5 +1,3 @@
-
-
 import sys
 
 from pyrogram import Client
@@ -9,6 +7,7 @@ from pyrogram.types import BotCommand
 import config
 
 from ..logging import LOGGER
+
 
 class ArchMusic(Client):
     def __init__(self):
@@ -29,7 +28,7 @@ class ArchMusic(Client):
 
             video_url = "https://telegra.ph/file/36221d40afde82941ffff.mp4"
             caption = "Bot Started"
-            
+
             try:
                 await self.send_video(
                     config.LOG_GROUP_ID,
@@ -46,23 +45,23 @@ class ArchMusic(Client):
                 try:
                     await self.set_bot_commands(
                         [
-    BotCommand("play", "🎙 Müziği oynatır"),
-    BotCommand("voynat", "📺 Videoyu oynatır"),
-    BotCommand("atla", "⏭️ Sonraki Parçaya Geçer"),
-    BotCommand("duraklat", "⏸️ Çalan Parçayı Durdurur"),
-    BotCommand("devam", "▶️ Çalan Parçayı Devam Ettirir"),
-    BotCommand("son", "⏹️ Çalan Parçayı Kapatır"),
-    BotCommand("karistir", "🔀 Çalan Parçayı Karıştırır"),
-    BotCommand("dongu", "🔄 Çalan Parçayı Tekrarlar"),
-    BotCommand("ilerisar", "⏩ Parçayı İleri Sarar"),
-    BotCommand("gerisar", "⏪ Parçayı Geri Sarar"),
-    BotCommand("playlist", "📖 Çalma Listenizi Gösterir"),
-    BotCommand("bul", "📩 Seçtiğiniz Parçayı İndirir"),
-    BotCommand("sarki", "🎵Şarkı önerir Armağan eder."),
-    BotCommand("ayarlar", "⚙️ Bot Ayarlarını Gösterir"),
-    BotCommand("playmode", "⚙️Admin ayarları"),
-    BotCommand("restart", "🔃 Botu Yeniden Başlatır"),
-    BotCommand("reload", "❤️‍🔥 Yönetici Önbelleğini Günceller"),
+                            BotCommand("play", "🎙 Müziği oynatır"),
+                            BotCommand("voynat", "📺 Videoyu oynatır"),
+                            BotCommand("atla", "⏭️ Sonraki Parçaya Geçer"),
+                            BotCommand("duraklat", "⏸️ Çalan Parçayı Durdurur"),
+                            BotCommand("devam", "▶️ Çalan Parçayı Devam Ettirir"),
+                            BotCommand("son", "⏹️ Çalan Parçayı Kapatır"),
+                            BotCommand("karistir", "🔀 Çalan Parçayı Karıştırır"),
+                            BotCommand("dongu", "🔄 Çalan Parçayı Tekrarlar"),
+                            BotCommand("ilerisar", "⏩ Parçayı İleri Sarar"),
+                            BotCommand("gerisar", "⏪ Parçayı Geri Sarar"),
+                            BotCommand("playlist", "📖 Çalma Listenizi Gösterir"),
+                            BotCommand("bul", "📩 Seçtiğiniz Parçayı İndirir"),
+                            BotCommand("sarki", "🎵Şarkı önerir Armağan eder."),
+                            BotCommand("ayarlar", "⚙️ Bot Ayarlarını Gösterir"),
+                            BotCommand("playmode", "⚙️Admin ayarları"),
+                            BotCommand("restart", "🔃 Botu Yeniden Başlatır"),
+                            BotCommand("reload", "❤️‍🔥 Yönetici Önbelleğini Günceller"),
                         ]
                     )
                 except:

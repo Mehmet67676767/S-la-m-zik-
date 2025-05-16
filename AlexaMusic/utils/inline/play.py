@@ -1,50 +1,23 @@
 
+
 # Copyright (C) 2025 by Alexa_Help @ Github, < https://github.com/TheTeamAlexa >
 # Subscribe On YT < Jankari Ki Duniya >. All rights reserved. © Alexa © Yukki.
-
-"""
-TheTeamAlexa is a project of Telegram bots with variety of purposes.
-Copyright (c) 2021 ~ Present Team Alexa <https://github.com/TheTeamAlexa>
-
-This program is free software: you can redistribute it and can modify
-as you want or you can collabe if you have new ideas.
-"""
-
 
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from config import SUPPORT_GROUP, SUPPORT_CHANNEL
 import random
 
-## After Edits with Timer Bar
-
-
-selections = [
-    "▁▄▂▇▄▅▄▅▃",
-    "▁▃▇▂▅▇▄▅▃",
-    "▃▁▇▂▅▃▄▃▅",
-    "▃▄▂▄▇▅▃▅▁",
-    "▁▃▄▂▇▃▄▅▃",
-    "▃▁▄▂▅▃▇▃▅",
-    "▁▇▄▂▅▄▅▃▄",
-    "▁▃▅▇▂▅▄▃▇",
-    "▃▅▂▅▇▁▄▃▁",
-    "▇▅▂▅▃▄▃▁▃",
-    "▃▇▂▅▁▅▄▃▁",
-    "▅▄▇▂▅▂▄▇▁",
-    "▃▅▂▅▃▇▄▅▃",
+# Ultra havalı bar stilleri
+bars = [
+    "⣿⣷⣯⣟⡿⢿⠿⠻⠋", "⠋⠻⠿⠿⠿⢿⡿⣟⣯⣷⣿", "▓▒░░▒▓█", "▁▃▅▇▆▇▅▃▁", "█▓▒░▒▓█", "◉—◉—◉"
 ]
 
-
-## After Edits with Timer Bar
-
-
-from pyrogram.types import InlineKeyboardButton
+selections = [
+    "✦◉◉◉▣◉◉◉✦", "☰☲☱▤▥▧▦▩", "✶✸✹✺✻✼✽✾✿❀", "▣▤▥▦▧▨▩◈◉◍◎", "☀☁☂☃★☆✪✫", "⚡⚙⚔⚒⚠⚜", "◉▣▤▥▦▧▨▩◈"
+]
 
 def stream_markup_timer(_, videoid, chat_id, played, dur):
-    import random
-    bars = ["▁▂▃▄▅▆▇█", "█▇▆▅▄▃▂▁", "▉▊▋▌▍▎▏▏"]
     bar = random.choice(bars)
-
     buttons = [
         [  # En üstte link
             InlineKeyboardButton(

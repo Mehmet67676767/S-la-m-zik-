@@ -1,3 +1,4 @@
+YouTubeAPI
 apscheduler==3.10.4
 deep-translator
 openai

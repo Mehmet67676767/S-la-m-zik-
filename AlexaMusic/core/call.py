@@ -32,7 +32,7 @@ from pytgcalls.types import (
 )
 
 import config
-from AlexaMusic import LOGGER, YouTube, app
+from AlexaMusic import LOGGER, Youtube, app
 from AlexaMusic.misc import db
 from AlexaMusic.utils.database import (
     add_active_chat,

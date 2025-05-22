@@ -28,7 +28,7 @@ from pytgcalls.types import (
     StreamEnded,
     GroupCallConfig,
     GroupCallParticipant,
-    Update,
+    UpdatedGroupCallParticipant,
 )
 
 import config
@@ -531,105 +531,4 @@ class Call(PyTgCalls):
                 else:
                     # theme = await check_theme(chat_id)
                     img = await gen_thumb(videoid)
-                    button = stream_markup(_, videoid, chat_id)
-                    try:
-                        run = await app.send_photo(
-                            original_chat_id,
-                            photo=img,
-                            caption=_["stream_1"].format(
-                                title[:27],
-                                f"https://t.me/{app.username}?start=info_{videoid}",
-                                check[0]["dur"],
-                                user,
-                            ),
-                            reply_markup=InlineKeyboardMarkup(button),
-                        )
-                    except FloodWait as e:
-                        await asyncio.sleep(e.value)
-                    db[chat_id][0]["mystic"] = run
-                    db[chat_id][0]["markup"] = "stream"
-
-    async def ping(self):
-        pings = []
-        if config.STRING1:
-            pings.append(self.one.ping)
-        if config.STRING2:
-            pings.append(self.two.ping)
-        if config.STRING3:
-            pings.append(self.three.ping)
-        if config.STRING4:
-            pings.append(self.four.ping)
-        if config.STRING5:
-            pings.append(self.five.ping)
-        return str(round(sum(pings) / len(pings), 3))
-
-    async def start(self):
-        LOGGER(__name__).info("Starting PyTgCalls Client\n")
-        if config.STRING1:
-            await self.one.start()
-        if config.STRING2:
-            await self.two.start()
-        if config.STRING3:
-            await self.three.start()
-        if config.STRING4:
-            await self.four.start()
-        if config.STRING5:
-            await self.five.start()
-
-    async def decorators(self):
-        @self.one.on_update(fl.chat_update(ChatUpdate.Status.LEFT_CALL))
-        @self.two.on_update(fl.chat_update(ChatUpdate.Status.LEFT_CALL))
-        @self.three.on_update(fl.chat_update(ChatUpdate.Status.LEFT_CALL))
-        @self.four.on_update(fl.chat_update(ChatUpdate.Status.LEFT_CALL))
-        @self.five.on_update(fl.chat_update(ChatUpdate.Status.LEFT_CALL))
-        async def stream_services_handler(client, update: ChatUpdate):
-            await self.stop_stream(update.chat_id)
-
-        @self.one.on_update(fl.stream_end())
-        @self.two.on_update(fl.stream_end())
-        @self.three.on_update(fl.stream_end())
-        @self.four.on_update(fl.stream_end())
-        @self.five.on_update(fl.stream_end())
-        async def stream_end_handler1(client, update: StreamEnded):
-            if update.stream_type != StreamEnded.Type.AUDIO:
-                return
-            await self.change_stream(client, update.chat_id)
-
-        @self.one.on_update(fl.call_participant(GroupCallParticipant.Action.UPDATED))
-        @self.two.on_update(fl.call_participant(GroupCallParticipant.Action.UPDATED))
-        @self.three.on_update(fl.call_participant(GroupCallParticipant.Action.UPDATED))
-        @self.four.on_update(fl.call_participant(GroupCallParticipant.Action.UPDATED))
-        @self.five.on_update(fl.call_participant(GroupCallParticipant.Action.UPDATED))
-        async def participants_change_handler(client, update: Update):
-            participant = update.participant
-            if participant.action not in (
-                GroupCallParticipant.Action.JOINED,
-                GroupCallParticipant.Action.LEFT,
-            ):
-                return
-            chat_id = update.chat_id
-            users = counter.get(chat_id)
-            if users is None:
-                try:
-                    got = len(await client.get_participants(chat_id))
-                except Exception:
-                    return
-                counter[chat_id] = got
-                if got == 1:
-                    autoend[chat_id] = datetime.now() + timedelta(minutes=AUTO_END_TIME)
-                    return
-                autoend[chat_id] = {}
-            else:
-                final = (
-                    users + 1
-                    if participant.action == GroupCallParticipant.Action.JOINED
-                    else users - 1
-                )
-                counter[chat_id] = final
-                if final == 1:
-                    autoend[chat_id] = datetime.now() + timedelta(minutes=AUTO_END_TIME)
-                    return
-                autoend[chat_id] = {}
-
-
-Alexa = Call()
+              

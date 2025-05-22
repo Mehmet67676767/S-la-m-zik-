@@ -15,4 +15,4 @@ class PlaTForms:
         self.soundcloud = SoundCloud()
         self.spotify = Spotify()
         self.telegram = Telegram()
-        self.youtube = YouTube
+        self.youtube = YouTube()

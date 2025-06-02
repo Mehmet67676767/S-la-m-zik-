@@ -1,3 +1,5 @@
+
+gtts
 aiofiles
 aiohttp
 beautifulsoup4

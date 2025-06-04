@@ -1,4 +1,4 @@
-from .turkce_kelimeler import kelime_listesi
+from AlexaMusic.plugins.tools.turkce_kelimeler import kelime_listesi
 kelime = kelime_listesi
 
 from pyrogram import Client, filters

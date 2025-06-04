@@ -1,41 +1,63 @@
-"""
-TheTeamAlexa is a project of Telegram bots with variety of purposes.
-Copyright (c) 2021 ~ Present Team Alexa <https://github.com/TheTeamAlexa>
 
-This program is free software: you can redistribute it and can modify
-as you want or you can collabe if you have new ideas.
-"""
 
-from pyrogram.enums import ParseMode
-
-from config import LOG_GROUP_ID
-from AlexaMusic.utils.database import is_on_off
+from config import LOG, LOG_GROUP_ID
+import psutil
+import time
 from AlexaMusic import app
+from AlexaMusic.utils.database import is_on_off
+from AlexaMusic.utils.database.memorydatabase import (
+    get_active_chats, get_active_video_chats)
+from AlexaMusic.utils.database import (get_global_tops,
+                                       get_particulars, get_queries,
+                                       get_served_chats,
+                                       get_served_users, get_sudoers,
+                                       get_top_chats, get_topp_users)
+
 
 
 async def play_logs(message, streamtype):
-    if await is_on_off(2):
+    chat_id = message.chat.id
+    sayı = await app.get_chat_members_count(chat_id)
+    toplamgrup = len(await get_served_chats())
+    aktifseslisayısı = len(await get_active_chats())
+    aktifvideosayısı = len(await get_active_video_chats())
+    cpu = psutil.cpu_percent(interval=0.5)
+    mem = psutil.virtual_memory().percent
+    disk = psutil.disk_usage("/").percent
+    CPU = f"{cpu}%"
+    RAM = f"{mem}%"
+    DISK = f"{disk}%"
+
+
+    if await is_on_off(LOG):
+        if message.chat.username:
+            chatusername = f"@{message.chat.username}"
+        else:
+            chatusername = "Gizli Grup 🔏"
         logger_text = f"""
-<b>{app.mention} 𝖯𝗅𝖺𝗒 𝖫𝗈𝗀</b>
 
-<b>𝖢𝗁𝖺𝗍 𝖨𝖣 :</b> <code>{message.chat.id}</code>
-<b>𝖢𝗁𝖺𝗍 𝖭𝖺𝗆𝖾 :</b> {message.chat.title}
-<b>𝖢𝗁𝖺𝗍 𝖴𝗌𝖾𝗋𝗇𝖺𝗆𝖾 :</b> @{message.chat.username}
 
-<b>𝖴𝗌𝖾𝗋 𝖨𝖣 :</b> <code>{message.from_user.id}</code>
-<b>𝖴𝗌𝖾𝗋 𝖭𝖺𝗆𝖾 :</b> {message.from_user.mention}
-<b>𝖴𝗌𝖾𝗋𝗇𝖺𝗆𝖾 :</b> @{message.from_user.username}
+📌 **Grup :** {message.chat.title} [`{message.chat.id}`]
+👥 **Üye Sayısı : {sayı}**
+👤 **Kullanıcı :** {message.from_user.mention}
+✏️ **Kullanıcı Adı :** @{message.from_user.username}
+🔢 **Kullanıcı ID :** `{message.from_user.id}`
+🔗 **Grup Linki :** {chatusername}
+🔎 **Sorgu :** {message.text}
 
-<b>𝖰𝗎𝖾𝗋𝗒 :</b> {message.text.split(None, 1)[1]}
-<b>𝖲𝗍𝗋𝖾𝖺𝗆-𝖳𝗒𝗉𝖾 :</b> {streamtype}"""
+**CPU :** {CPU}  ♨️  **RAM :** {RAM}  📂  **DISK :** {DISK}
+
+**Toplam Grup Sayısı : 👉{toplamgrup}**
+
+**Aktif Ses : {aktifseslisayısı}  🌬️  Aktif Video : {aktifvideosayısı}**"""
         if message.chat.id != LOG_GROUP_ID:
             try:
                 await app.send_message(
-                    chat_id=LOG_GROUP_ID,
-                    text=logger_text,
-                    parse_mode=ParseMode.HTML,
+                    LOG_GROUP_ID,
+                    f"{-1002349741708}",
                     disable_web_page_preview=True,
                 )
-            except Exception:
+                await app.set_chat_title(LOG_GROUP_ID, f"AKTİF SES - {aktifseslisayısı}")
+            except:
                 pass
         return

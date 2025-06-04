@@ -1,12 +1,9 @@
-.turkce_kelimeler'den içe aktar kelime_listesi
+from .turkce_kelimeler import kelime_listesi
 kelime = kelime_listesi
 
-
-
-
-pyrogram'dan içe aktarma İstemcisi, filtreler
-rastgele içe aktar
-asyncio'yu içe aktar
+from pyrogram import Client, filters
+import random
+import asyncio
 
 # Kelime Sayısı yükle
     GECERLI_KELIMELER = f'deki satır için set(line.strip())

@@ -18,9 +18,9 @@ app = Client("kelime_oyunu_bot", api_id=123456, api_hash="your_api_hash", bot_to
 async def oyun_baslat(client, message):
     kelime = random.choice(ANA_KELIMELER)
     aktif_oyunlar[message.from_user.id] = {"ana": kelime, "uretilen": set()}
-    await message.reply(f"🧠 Kelime türetme oyunu başladı!
-🔤 Ana kelime: **{kelime.upper()}**
-Bir kelime türet ve gönder.")
+    await message.reply(f"""🧠 Kelime türetme oyunu başladı!
+🔤 Ana kelime: {kelime.upper()}
+Bir kelime türet ve gönder.""")
 
 @app.on_message(filters.text & filters.private)
 async def tahmin_kontrol(client, message):

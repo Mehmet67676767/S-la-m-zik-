@@ -96,28 +96,45 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
     return buttons
 
 
+def time_to_sec(time_str):
+    parts = list(map(int, time_str.split(":")))
+    return parts[0] * 60 + parts[1] if len(parts) == 2 else 0
+
 def telegram_markup_timer(_, chat_id, played, dur, videoid):
-    bar = random.choice(selection)
+    played_sec = time_to_sec(played)
+    total_sec = time_to_sec(dur)
+    if total_sec == 0:
+        total_sec = 1
+    ratio = played_sec / total_sec
+    pos = int(ratio * 8)
+
+    bar_symbols = ["➖"] * 8
+    if pos >= len(bar_symbols):
+        pos = len(bar_symbols) - 1
+    bar_symbols[pos] = "🔘"
+    bar = "".join(bar_symbols)
+
     buttons = [
         [
-            InlineKeyboardButton(
-                text=f"𝙆𝙐𝙈𝙎𝘼𝙇 𝘽𝙊𝙏𝙎 ", 
-                url=f"https://t.me/the_team_kumsal"
-            )
+            InlineKeyboardButton("🚀 Kumsal Bots 🚀", url="https://t.me/the_team_kumsal")
         ],
-
         [
-            InlineKeyboardButton(
-                text=_["PL_B_2"],
-                callback_data=f"add_playlist {videoid}",
-            ),
-            InlineKeyboardButton(
-                text=_["PL_B_3"],
-                callback_data=f"PanelMarkup None|{chat_id}",
-            ),
+            InlineKeyboardButton(f"{played} ⟪ {bar} ⟫ {dur}", callback_data="nonclickable")
+        ],
+        [
+            InlineKeyboardButton("⏮ Geri", callback_data=f"ADMIN 1|{chat_id}"),
+            InlineKeyboardButton("⏸ Duraklat", callback_data=f"pausevc {chat_id}"),
+            InlineKeyboardButton("▶️ Devam", callback_data=f"resumevc {chat_id}"),
+            InlineKeyboardButton("⏭ Atla", callback_data=f"ADMIN 2|{chat_id}"),
+            InlineKeyboardButton("⏹ Bitir", callback_data=f"stopvc {chat_id}"),
+        ],
+        [
+            InlineKeyboardButton("✅ Listeye Ekle", callback_data=f"add_playlist {videoid}"),
+            InlineKeyboardButton("🔮 Kontrol Paneli", callback_data=f"PanelMarkup None|{chat_id}"),
         ],
     ]
     return buttons
+
 
 
 # Rest of the functions remain the same...

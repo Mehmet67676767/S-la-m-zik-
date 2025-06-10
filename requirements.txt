@@ -17,7 +17,7 @@ pykeyboard
 pyrofork
 # py-tgcalls==0.9.7 ← bunu kaldır
 py-tgcalls==0.9.7
-tgcalls==0.0.12
+ntgcalls==2.0.1
 python-dotenv
 pyyaml
 requests

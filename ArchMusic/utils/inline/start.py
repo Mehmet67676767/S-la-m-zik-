@@ -22,77 +22,47 @@ def start_pannel(_):
                 text=_["S_B_1"],
                 url=f"https://t.me/{app.username}?start=help",
             ),
-            InlineKeyboardButton(
-                text=_["S_B_2"], callback_data="settings_helper"
-            ),
+            InlineKeyboardButton(text=_["S_B_2"], callback_data="settings_helper"),
         ],
     ]
     if SUPPORT_CHANNEL and SUPPORT_GROUP:
         buttons.append(
             [
-                InlineKeyboardButton(
-                    text=_["S_B_4"], url=f"{SUPPORT_CHANNEL}"
-                ),
-                InlineKeyboardButton(
-                    text=_["S_B_3"], url=f"{SUPPORT_GROUP}"
-                ),
+                InlineKeyboardButton(text=_["S_B_4"], url=f"{SUPPORT_CHANNEL}"),
+                InlineKeyboardButton(text=_["S_B_3"], url=f"https://t.me/the_team_kumsal"),
             ]
         )
     else:
         if SUPPORT_CHANNEL:
             buttons.append(
-                [
-                    InlineKeyboardButton(
-                        text=_["S_B_4"], url=f"{SUPPORT_CHANNEL}"
-                    )
-                ]
+                [InlineKeyboardButton(text=_["S_B_4"], url=f"{SUPPORT_CHANNEL}")]
             )
         if SUPPORT_GROUP:
             buttons.append(
-                [
-                    InlineKeyboardButton(
-                        text=_["S_B_3"], url=f"{SUPPORT_GROUP}"
-                    )
-                ]
+                [InlineKeyboardButton(text=_["S_B_3"], url=f"https://t.me/the_team_kumsal")]
             )
     return buttons
 
 
 def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
     buttons = [
-        [
-            InlineKeyboardButton(
-                text=_["S_B_8"], callback_data="settings_back_helper"
-            )
-        ]
+        [InlineKeyboardButton(text=_["S_B_8"], callback_data="settings_back_helper")]
     ]
     if SUPPORT_CHANNEL and SUPPORT_GROUP:
         buttons.append(
             [
-                InlineKeyboardButton(
-                    text=_["S_B_4"], url=f"{SUPPORT_CHANNEL}"
-                ),
-                InlineKeyboardButton(
-                    text=_["S_B_3"], url=f"{SUPPORT_GROUP}"
-                ),
+                InlineKeyboardButton(text=_["S_B_4"], url=f"{SUPPORT_CHANNEL}"),
+                InlineKeyboardButton(text=_["S_B_3"], url=f"https://t.me/the_team_kumsal"),
             ]
         )
     else:
         if SUPPORT_CHANNEL:
             buttons.append(
-                [
-                    InlineKeyboardButton(
-                        text=_["S_B_4"], url=f"{SUPPORT_CHANNEL}"
-                    )
-                ]
+                [InlineKeyboardButton(text=_["S_B_4"], url=f"{SUPPORT_CHANNEL}")]
             )
         if SUPPORT_GROUP:
             buttons.append(
-                [
-                    InlineKeyboardButton(
-                        text=_["S_B_3"], url=f"{SUPPORT_GROUP}"
-                    )
-                ]
+                [InlineKeyboardButton(text=_["S_B_3"], url=f"https://t.me/the_team_kumsal")]
             )
     buttons.append(
         [
@@ -102,30 +72,24 @@ def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
             )
         ]
     )
-    if GITHUB_REPO and OWNER:
+    if GITHUB_REPO and OWNER_ID:
         buttons.append(
             [
-                InlineKeyboardButton(text=_["S_B_7"], user_id=OWNER),
-                InlineKeyboardButton(
-                    text=_["S_B_6"], url=f"https://t.me/ArthurMusicLog"
-                ),
+                InlineKeyboardButton(text=_["S_B_7"], user_id=OWNER_ID),
+                InlineKeyboardButton(text=_["S_B_6"], url=f"https://t.me/the_alya_albora"),
             ]
         )
     else:
         if GITHUB_REPO:
             buttons.append(
                 [
-                    InlineKeyboardButton(
-                        text=_["S_B_6"], url=f"https://t.me/ArthurMusicLog"
-                    ),
+                    InlineKeyboardButton(text=_["S_B_6"], url=f"https://t.me/the_zerrin_albora"),
                 ]
             )
         if OWNER:
             buttons.append(
                 [
-                    InlineKeyboardButton(
-                        text=_["S_B_7"], user_id=OWNER
-                    ),
+                    InlineKeyboardButton(text=_["S_B_7"], user_id=OWNER_ID),
                 ]
             )
     return buttons

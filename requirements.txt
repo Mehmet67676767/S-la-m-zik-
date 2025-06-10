@@ -15,7 +15,9 @@ pillow
 psutil
 pykeyboard
 pyrofork
-py-tgcalls==0.9.7
+# py-tgcalls==0.9.7 ← bunu kaldır
+pytgcalls==0.0.19
+tgcalls==0.0.12
 python-dotenv
 pyyaml
 requests

@@ -18,9 +18,9 @@ from pyrogram.types import (
     CallbackQuery,
     ChatMemberUpdated,
 )
-from AlexaMusic import app
+from ArchMusic import app
 from config import LOG_GROUP_ID, OWNER_ID
-from AlexaMusic.plugins.modules.kumsal import *
+from ArchMusic.plugins.tools.kumsal import *
 
 kumsal_tagger = {}
 users = []

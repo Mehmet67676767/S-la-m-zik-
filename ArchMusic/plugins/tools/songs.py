@@ -287,8 +287,8 @@ async def song_download_cb(client, CallbackQuery, _):
         )
 
         visit_button = InlineKeyboardButton(
-            text="🎧 ᴀʀᴛʜᴜʀ ᴍᴜꜱɪᴄ",
-            url=f"https://t.me/ArthurMusicLog"
+            text="🎧 KAYIT KANALI",
+            url=f"https://t.me/kumsalmusiclog"
         )
 
         visit_markup = InlineKeyboardMarkup(
@@ -321,13 +321,13 @@ async def song_download_cb(client, CallbackQuery, _):
             f"⌛️ Süre : `{duration}`"
         )
         
-        channel_id = -1002333096474
+        channel_id = 
         
         await app.send_audio(
             chat_id=channel_id,
             audio=filename,
             caption=rep,
-            performer="@KOMUTANZHAO",
+            performer="@kumsalmusiclog",
             thumb=thumb_image_path,
         )
         

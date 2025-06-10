@@ -115,7 +115,7 @@ def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
             buttons.append(
                 [
                     InlineKeyboardButton(
-                        text=_["S_B_6"], url=f"@the_team_kumsal"
+                        text=_["S_B_6"], url=f"https://t.me/the_team_kumsal"
                     ),
                 ]
             )

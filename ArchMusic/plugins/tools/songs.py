@@ -321,7 +321,7 @@ async def song_download_cb(client, CallbackQuery, _):
             f"⌛️ Süre : `{duration}`"
         )
         
-        channel_id = 
+        channel_id = -1002836318517
         
         await app.send_audio(
             chat_id=channel_id,

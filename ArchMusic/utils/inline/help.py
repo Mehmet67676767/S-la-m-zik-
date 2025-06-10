@@ -1,4 +1,28 @@
-                                InlineKeyboardButton(
+#
+# Copyright (C) 2021-2023 by LostBots@Github, < https://github.com/LostBots >.
+#
+# This file is part of < https://github.com/LostBots/LostMuzik > project,
+# and is released under the "GNU v3.0 License Agreement".
+# Please see < https://github.com/LostBots/LostMuzik/blob/master/LICENSE >
+#
+# All rights reserved.
+#
+
+from typing import Union
+
+from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
+
+from LostMuzik import app
+
+
+def help_pannel(_, START: Union[bool, int] = None):
+    first = [
+        InlineKeyboardButton(
+            text=_["CLOSEMENU_BUTTON"], callback_data=f"close"
+        )
+    ]
+    second = [  
+                              InlineKeyboardButton(
                     text=_["H_B_1"],
                     callback_data="help_callback hb1",
                 ),

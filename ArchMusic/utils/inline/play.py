@@ -122,11 +122,11 @@ def telegram_markup_timer(_, chat_id, played, dur, videoid):
             InlineKeyboardButton(f"{played} ⟪ {bar} ⟫ {dur}", callback_data="nonclickable")
         ],
         [
-            InlineKeyboardButton("⏮ Geri", callback_data=f"ADMIN 1|{chat_id}"),
-            InlineKeyboardButton("⏸ Duraklat", callback_data=f"pausevc {chat_id}"),
-            InlineKeyboardButton("▶️ Devam", callback_data=f"resumevc {chat_id}"),
-            InlineKeyboardButton("⏭ Atla", callback_data=f"ADMIN 2|{chat_id}"),
-            InlineKeyboardButton("⏹ Bitir", callback_data=f"stopvc {chat_id}"),
+            InlineKeyboardButton("[⏮]", callback_data=f"ADMIN 1|{chat_id}"),
+            InlineKeyboardButton([⏸]", callback_data=f"pausevc {chat_id}"),
+            InlineKeyboardButton("[▶️]", callback_data=f"resumevc {chat_id}"),
+            InlineKeyboardButton("[⏭]", callback_data=f"ADMIN 2|{chat_id}"),
+            InlineKeyboardButton("[⏹] Bitir", callback_data=f"stopvc {chat_id}"),
         ],
         [
             InlineKeyboardButton("✅ Listeye Ekle", callback_data=f"add_playlist {videoid}"),

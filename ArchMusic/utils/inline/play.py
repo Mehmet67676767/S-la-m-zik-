@@ -18,42 +18,33 @@ selection = [
     "▃▅▂▅▃▇▄▅▃",
 ]
 
-def time_to_sec(time: str):
-    x = time.split(":")
-
-    if len(x) == 2:
-        min = int(x[0])
-        sec = int(x[1])
-
-        total_sec = (min*60) + sec
-    elif len(x) == 3:
-        hour = int(x[0])
-        min = int(x[1])
-        sec = int(x[2])
-
-        total_sec = (hour*60*60) + (min*60) + sec
-
-    return total_sec
-
 def stream_markup_timer(_, videoid, chat_id, played, dur):
     played_sec = time_to_sec(played)
     total_sec = time_to_sec(dur)
+    if total_sec == 0:
+        total_sec = 1
 
-    x, y = str(round(played_sec/total_sec,1)).split(".")
+    x, y = str(round(played_sec / total_sec, 1)).split(".")
     pos = int(y)
 
     line = "─"
     circle = "●"
 
-    bar = line*(pos-1)
+    bar = line * (pos - 1)
     bar += circle
-    bar += line*(10-len(bar))
+    bar += line * (10 - len(bar))
 
     buttons = [
         [
+            InlineKeyboardButton("▶️", callback_data=f"resumevc {chat_id}"),
+            InlineKeyboardButton("⏸️", callback_data=f"pausevc {chat_id}"),
+            InlineKeyboardButton("⏭️", callback_data=f"skipvc {chat_id}"),
+            InlineKeyboardButton("⏹️", callback_data=f"stopvc {chat_id}"),
+        ],
+        [
             InlineKeyboardButton(
-                text=f"🔮 𝙆𝙐𝙈𝙎𝘼𝙇 𝘽𝙊𝙏𝙎 🔮", 
-                url=f"https://t.me/the_team_kumsal"
+                text="🔮 𝙆𝙐𝙈𝙎𝘼𝙇 𝘽𝙊𝙏𝙎 🔮",
+                url="https://t.me/the_team_kumsal"
             )
         ],
         [

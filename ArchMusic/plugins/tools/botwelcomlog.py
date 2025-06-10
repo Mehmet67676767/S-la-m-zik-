@@ -1,92 +1,52 @@
-# This code is written by (C) TheTeamAlexa bot will send message to log group when someone add
-# this bot to new group make sure to star all projects
-# Copyright (C) 2021-2025 by Alexa_Help@ Github, < TheTeamAlexa >.
-# All rights reserved. © Alexa © Yukki
-
-from pyrogram import filters
-from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
-from config import LOG, LOG_GROUP_ID
+from pyrogram import Client, filters
+from pyrogram.types import Message
+from config import LOG_GROUP_ID
 from ArchMusic import app
-from ArchMusic.utils.database import delete_served_chat, get_assistant, is_on_off
+from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
+
+
+async def new_message(chat_id: int, message: str, reply_markup=None):
+    await app.send_message(chat_id=chat_id, text=message, reply_markup=reply_markup)
 
 
 @app.on_message(filters.new_chat_members)
-async def bot_added(_, message):
-    try:
-        if not await is_on_off(LOG):
-            return
-        userbot = await get_assistant(message.chat.id)
-        chat = message.chat
-        for members in message.new_chat_members:
-            if members.id == app.id:
-                count = await app.get_chat_members_count(chat.id)
-                username = message.chat.username or "Private Chat"
-                msg = (
-                    f"<b>Bot added in</b> {message.chat.title}\n\n"
-                    f"<b>Name:</b> {message.chat.title}\n"
-                    f"<b>Id:</b> {message.chat.id}\n"
-                    f"<b>Username:</b> @{username}\n"
-                    f"<b>Added By:</b> {message.from_user.mention}"
-                )
-                await app.send_message(
-                    LOG_GROUP_ID,
-                    text=msg,
-                    reply_markup=InlineKeyboardMarkup(
-                        [
-                            [
-                                InlineKeyboardButton(
-                                    text=f"Added by: {message.from_user.first_name}",
-                                    user_id=message.from_user.id,
-                                )
-                            ]
-                        ]
-                    ),
-                )
-                if message.chat.username:
-                    await userbot.join_chat(message.chat.username)
-    except Exception:
-        pass
+async def on_new_chat_members(client: Client, message: Message):
+    if (await client.get_me()).id in [user.id for user in message.new_chat_members]:
+        added_by = f"{message.from_user.first_name}"
+        chatusername = f"@{message.chat.username}"
+        title = message.chat.title
+        chat_id = message.chat.id
+        sigma = f" <u>#**Yeni Gruba Eklendi**</u> :\n\n**Grup ID:** {chat_id}\n**Grup Adı:** {title}\n**Grup Link:** {chatusername}\n**Gruba Ekleyen:** {added_by}"
+
+        reply_markup = InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton(
+                        message.from_user.first_name, user_id=message.from_user.id
+                    )
+                ]
+            ]
+        )
+
+        await new_message(LOG_GROUP_ID, sigma, reply_markup)
 
 
 @app.on_message(filters.left_chat_member)
-async def bot_kicked(_, message: Message):
-    try:
-        if not await is_on_off(LOG):
-            return
-        userbot = await get_assistant(message.chat.id)
-        left_chat_member = message.left_chat_member
-        if left_chat_member and left_chat_member.id == app.id:
-            remove_by = (
-                message.from_user.mention if message.from_user else "Unknown User"
-            )
-            title = message.chat.title
-            username = (
-                f"@{message.chat.username}" if message.chat.username else "Private Chat"
-            )
-            chat_id = message.chat.id
-            left = (
-                f"Bot was Removed in {title}\n"
-                f"<b>Name</b>: {title}\n"
-                f"<b>Id</b>: {chat_id}\n"
-                f"<b>Username</b>: {username}\n"
-                f"<b>Removed By</b>: {remove_by}"
-            )
+async def on_left_chat_member(client: Client, message: Message):
+    if (await client.get_me()).id == message.left_chat_member.id:
+        removed_by = f"{message.from_user.first_name}"
+        title = message.chat.title
+        chat_id = message.chat.id
+        bye = f" <u>#**Gruptan Çıkarıldı**</u> :\n\n**Grup ID:** {chat_id}\n**Grup Adı:** {title}\n**Gruptan Çıkaran:** {removed_by}"
 
-            await app.send_message(
-                LOG_GROUP_ID,
-                text=left,
-                reply_markup=InlineKeyboardMarkup(
-                    [
-                        [
-                            InlineKeyboardButton(
-                                text=f"Removed By: {message.from_user.first_name}",
-                                user_id=message.from_user.id,
-                            )
-                        ]
-                    ]
-                ),
-            )
-            await delete_served_chat(chat_id)
-            await userbot.leave_chat(chat_id)
-    except Exception as e:
-        pass
+        reply_markup = InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton(
+                        message.from_user.first_name, user_id=message.from_user.id
+                    )
+                ]
+            ]
+        )
+
+        await new_message(LOG_GROUP_ID, bye, reply_markup)

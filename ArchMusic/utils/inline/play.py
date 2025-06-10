@@ -1,6 +1,6 @@
+from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
+from config import SUPPORT_GROUP, SUPPORT_CHANNEL
 import random
-
-from pyrogram.types import InlineKeyboardButton
 
 # Duygusal ve estetik zaman çubuğu stilleri
 bars = [

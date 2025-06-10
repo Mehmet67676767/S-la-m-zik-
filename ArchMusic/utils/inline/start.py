@@ -19,16 +19,16 @@ def start_pannel(_):
     buttons = [
         [
             InlineKeyboardButton(
-                text=_["S_B_1"],
+                text=_["S_B_5"],
                 url=f"https://t.me/{app.username}?start=help",
             ),
-            InlineKeyboardButton(text=_["S_B_2"], callback_data="settings_helper"),
+            InlineKeyboardButton(text=_["S_B_1"], callback_data="settings_helper"),
         ],
     ]
     if SUPPORT_CHANNEL and SUPPORT_GROUP:
         buttons.append(
             [
-                InlineKeyboardButton(text=_["S_B_4"], url=f"{SUPPORT_CHANNEL}"),
+                InlineKeyboardButton(text=_["S_B_3"], url=f"{SUPPORT_CHANNEL}"),
                 InlineKeyboardButton(text=_["S_B_3"], url=f"https://t.me/the_team_kumsal"),
             ]
         )
@@ -39,7 +39,7 @@ def start_pannel(_):
             )
         if SUPPORT_GROUP:
             buttons.append(
-                [InlineKeyboardButton(text=_["S_B_3"], url=f"https://t.me/the_team_kumsal")]
+                [InlineKeyboardButton(text=_["S_B_4"], url=f"https://t.me/the_team_kumsal")]
             )
     return buttons
 
@@ -51,7 +51,7 @@ def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
     if SUPPORT_CHANNEL and SUPPORT_GROUP:
         buttons.append(
             [
-                InlineKeyboardButton(text=_["S_B_4"], url=f"{SUPPORT_CHANNEL}"),
+                InlineKeyboardButton(text=_["S_B_3"], url=f"{SUPPORT_CHANNEL}"),
                 InlineKeyboardButton(text=_["S_B_3"], url=f"https://t.me/the_team_kumsal"),
             ]
         )
@@ -62,7 +62,7 @@ def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
             )
         if SUPPORT_GROUP:
             buttons.append(
-                [InlineKeyboardButton(text=_["S_B_3"], url=f"https://t.me/the_team_kumsal")]
+                [InlineKeyboardButton(text=_["S_B_4"], url=f"https://t.me/the_team_kumsal")]
             )
     buttons.append(
         [
@@ -76,7 +76,7 @@ def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
         buttons.append(
             [
                 InlineKeyboardButton(text=_["S_B_7"], user_id=OWNER_ID),
-                InlineKeyboardButton(text=_["S_B_6"], url=f"https://t.me/the_alya_albora"),
+                InlineKeyboardButton(text=_["S_B_7"], url=f"https://t.me/the_alya_albora"),
             ]
         )
     else:
@@ -89,7 +89,7 @@ def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
         if OWNER:
             buttons.append(
                 [
-                    InlineKeyboardButton(text=_["S_B_7"], user_id=OWNER_ID),
+                    InlineKeyboardButton(text=_["S_B_6"], user_id=OWNER_ID),
                 ]
             )
     return buttons

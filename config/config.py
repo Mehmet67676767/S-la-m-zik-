@@ -18,11 +18,11 @@ API_HASH = getenv("API_HASH", "26ee1b6fa968114c784e95e3478df1c1")
 
 ## Get it from @Botfather in Telegram.
 
-BOT_TOKEN = getenv("BOT_TOKEN", "7849503679:AAGl_Uc-0brNkC1w1umgDlxzVApB1uSShyU")
+BOT_TOKEN = getenv("BOT_TOKEN", "7363198780:AAHNleThjcZ88qgysqHl2iCM_D462zGl1Ac")
 
 # Database to save your chats and stats.
 
-MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://yilmaz:yilmaz@yilmaz.yalaf.mongodb.net/?retryWrites=true&w=majority&appName=Yilmaz")
+MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://Mehmetkurt:halilim123123@cluster0.rvh8b9r.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 
 # Custom max audio(music) duration for voice chat. set DURATION_LIMIT in variables with your own time(mins), Default to 60 mins.
 
@@ -42,7 +42,7 @@ SONG_DOWNLOAD_DURATION = int(
 
 # You'll need a Private Group ID for this.
 
-LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1002338798159"))
+LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1002589495344"))
 
 # A name for your Music bot.
 
@@ -70,7 +70,7 @@ UPSTREAM_REPO = getenv(
 
     "UPSTREAM_REPO",
 
-    "https://github.com/Madboy0700/sohbetbox",
+    "https://github.com/Mehmet67676767/isamuzik",
 
 )
 
@@ -84,11 +84,11 @@ GIT_TOKEN = getenv("GIT_TOKEN", None)
 
 SUPPORT_CHANNEL = getenv(
 
-    "SUPPORT_CHANNEL", "https://t.me/ArthurDuyuru") # Example:- https://t.me/ArchBots
+    "SUPPORT_CHANNEL", "https://t.me/the_team_kumsal") # Example:- https://t.me/ArchBots
 
 SUPPORT_GROUP = getenv(
 
-    "SUPPORT_GROUP", "https://t.me/arthursohbett")  # Example:- https://t.me/ARCH_SUPPORTS
+    "SUPPORT_GROUP", "https://t.me/kumsalmuzikk")  # Example:- https://t.me/ARCH_SUPPORTS
 
 # Set it in True if you want to leave your assistant after a certain amount of time. [Set time via AUTO_LEAVE_ASSISTANT_TIME]
 
@@ -184,8 +184,7 @@ SET_CMDS = getenv("SET_CMDS", False)
 
 # You'll need a Pyrogram String Session for these vars. Generate String from our session generator bot @YukkiStringBot
 
-STRING1 = getenv("STRING_SESSION", "BAGYe4UAtqKxg83OjLXWRiFZhG8xoQRf3FqpNqyaq_owVF4TMHi4KmoqDmW4qLhTmr38Picy9Sq1gIQG5GQI2KlOAsJoCib-uGG0KcpuNCtF4rV_xLyytpWItmXeSCftfK4gVCaglIgwQz86MnRDo4qplBXxKpgC2hVkm2W3qnxCE-V85Hr0tw81DPvafoq_-w4bNDQFOLMvV3QvVDUDkRJOJF7jKbv0lbqyx2kINeGqyiGpBarpipSeflhHwFvLMpI87u2f6VJjnpv3VmTgCwrv1XXUPKjDQkGrT4faUToaQ5DnalyFa0a0aSR_iH-O_YT0hnZaE-0SlvGz0y1UnwhWeN1fmQAAAAHCd_YhAA")
-
+STRING1 = getenv("STRING_SESSION", "BAFDZnYAMYcJnHJLoBc674VuEzaF-qjqm-sihCf6PLqvpjSLWfmG4MM1K0MefNsmOj3kcDRfFCwzdk0os9rY52BA8lw5QNTkI7NP8a-LXArlIBFdfM0W_1w-lumhvLTIEafzzwQIKRIDwpeL73E4WPQZmSzlcVz2ViSpLkVRidzGUIUmgCxZW5CSDEmHhOtOaoxuqmlsXbmoYYMS5bEEA3DIQ94cZczviqlL-x4p3uGkdGLs2LimFAZ5jQ7uNI0VZg-zPdQD9k70AsYAH9_88K9_aEpMKoZ0IFtEv6kJIf8AlnzbtzW1-zxYnydN1zg8WpBuFau7NnE1RN4HsgnWqh9EGGNt0wAAAAHSIIiUAA")
 STRING2 = getenv("STRING_SESSION2", None)
 
 STRING3 = getenv("STRING_SESSION3", None)
@@ -224,7 +223,7 @@ autoclean = []
 
 START_IMG_URL = getenv(
      "START_IMG_URL", 
-     "https://pbs.twimg.com/media/GlYNUMFWEAA4jEK?format=jpg&name=small",
+     "https://ibb.co/YFD02YDY",
      
 
 )
@@ -233,7 +232,7 @@ PING_IMG_URL = getenv(
 
     "PING_IMG_URL",
 
-    "https://pbs.twimg.com/media/GlYNUMFWEAA4jEK?format=jpg&name=small",
+    "https://ibb.co/YFD02YDY",
 
 )
 

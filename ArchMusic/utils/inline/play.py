@@ -36,34 +36,59 @@ def time_to_sec(time: str):
     return total_sec
 
 def stream_markup_timer(_, videoid, chat_id, played, dur):
-    def time_to_sec(t):
-        parts = list(map(int, t.split(":")))
-        if len(parts) == 2:
-            return parts[0] * 60 + parts[1]
-        elif len(parts) == 3:
-            return parts[0] * 3600 + parts[1] * 60 + parts[2]
-        return 0
-
     played_sec = time_to_sec(played)
     total_sec = time_to_sec(dur)
-    percentage = round((played_sec / total_sec) * 10) if total_sec else 0
 
-    bar = "➤"  # Başlangıç oku
-    bar += "━" * percentage + "⚪" + "━" * (9 - percentage)  # Ortada top efekti
-    bar_display = f"{played} ⏳ {bar} ⏳ {dur}"
+    x, y = str(round(played_sec/total_sec,1)).split(".")
+    pos = int(y)
+
+    line = "─"
+    circle = "●"
+
+    bar = line*(pos-1)
+    bar += circle
+    bar += line*(10-len(bar))
 
     buttons = [
-        [InlineKeyboardButton(text="🚀 Kumsal Bots 🚀", url="https://t.me/the_team_kumsal")],
-        [InlineKeyboardButton(text=bar_display, callback_data="ignore")],
         [
-            InlineKeyboardButton("⏮", callback_data=f"ADMIN 1|{chat_id}"),
-            InlineKeyboardButton("⏸", callback_data=f"ADMIN Pause|{chat_id}"),
-            InlineKeyboardButton("⏭", callback_data=f"ADMIN 2|{chat_id}"),
-            InlineKeyboardButton("⏹", callback_data=f"ADMIN Stop|{chat_id}"),
+            InlineKeyboardButton(
+                text=f"🔮 𝙆𝙐𝙈𝙎𝘼𝙇 𝘽𝙊𝙏𝙎 🔮", 
+                url=f"https://t.me/the_team_kumsal"
+            )
         ],
         [
-            InlineKeyboardButton("✅ Listeye Ekle", callback_data=f"add_playlist {videoid}"),
-            InlineKeyboardButton("🔮 Kontrol Paneli", callback_data=f"PanelMarkup None|{chat_id}"),
+            InlineKeyboardButton(
+                text=_["PL_B_2"],
+                callback_data=f"add_playlist {videoid}",
+            ),
+            InlineKeyboardButton(
+                text=_["PL_B_3"],
+                callback_data=f"PanelMarkup None|{chat_id}",
+            ),
+        ],
+    ]
+    return buttons
+
+
+def telegram_markup_timer(_, chat_id, played, dur, videoid):
+    bar = random.choice(selection)
+    buttons = [
+        [
+            InlineKeyboardButton(
+                text=f"𝙆𝙐𝙈𝙎𝘼𝙇 𝘽𝙊𝙏𝙎 ", 
+                url=f"https://t.me/the_team_kumsal"
+            )
+        ],
+
+        [
+            InlineKeyboardButton(
+                text=_["PL_B_2"],
+                callback_data=f"add_playlist {videoid}",
+            ),
+            InlineKeyboardButton(
+                text=_["PL_B_3"],
+                callback_data=f"PanelMarkup None|{chat_id}",
+            ),
         ],
     ]
     return buttons

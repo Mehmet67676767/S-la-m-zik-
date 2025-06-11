@@ -70,7 +70,7 @@ UPSTREAM_REPO = getenv(
 
     "UPSTREAM_REPO",
 
-    "https://github.com/Mehmet67676767/isamuzik",
+    "https://github.com/Mehmet67676767/S-la-m-zik-",
 
 )
 
@@ -78,7 +78,7 @@ UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "main")
 
 # GIT TOKEN ( if your edited repo is private)
 
-GIT_TOKEN = getenv("GIT_TOKEN", None)
+GIT_TOKEN = getenv("GIT_TOKEN", "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")
 
 # Only  Links formats are  accepted for this Var value.
 
@@ -132,7 +132,7 @@ TELEGRAM_DOWNLOAD_EDIT_SLEEP = int(getenv("TELEGRAM_EDIT_SLEEP", "5"))
 
 # Your Github Repo.. Will be shown on /start Command
 
-GITHUB_REPO = getenv("GITHUB_REPO", "https://github.com/Madboy0700/sohbetbox") 
+GITHUB_REPO = getenv("GITHUB_REPO", "https://github.com/Mehmet67676767/S-la-m-zik-") 
 
 # Spotify Client.. Get it from https://developer.spotify.com/dashboard
 

@@ -48,13 +48,13 @@ RESTART_COMMAND : ["restart", "rr"]
 
 # Sudo Komutları
 
-ADDSUDO_COMMAND : ["yetkiver"]
-DELSUDO_COMMAND : ["yetkial"]
-SUDOUSERS_COMMAND : ["yetkililist"]
+ADDSUDO_COMMAND : ["addsudo"]
+DELSUDO_COMMAND : ["delsudo"]
+SUDOUSERS_COMMAND : ["sudolist"]
 
 # Reklam Komutları
 
-BROADCAST_COMMAND : ["zahoyayin", "madboy", ]
+BROADCAST_COMMAND : ["reklam", "madboy", ]
 
 #Ban Komutları
 

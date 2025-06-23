@@ -288,7 +288,7 @@ async def song_download_cb(client, CallbackQuery, _):
 
         visit_button = InlineKeyboardButton(
             text="🎧 KAYIT KANALI",
-            url=f"https://t.me/kumsalmusiclog"
+            url=f"https://t.me/ceydalog"
         )
 
         visit_markup = InlineKeyboardMarkup(
@@ -299,7 +299,7 @@ async def song_download_cb(client, CallbackQuery, _):
             media=filename,
             caption=res,
             thumb=thumb_image_path,
-            performer="@KOMUTANZHAO"
+            performer="Ceyda müzik"
         )
         
         await mystic.edit_text(_["song_11"])
@@ -321,13 +321,13 @@ async def song_download_cb(client, CallbackQuery, _):
             f"⌛️ Süre : `{duration}`"
         )
         
-        channel_id = -1002836318517
+        channel_id = -1002668100973
         
         await app.send_audio(
             chat_id=channel_id,
             audio=filename,
             caption=rep,
-            performer="@kumsalmusiclog",
+            performer="Ceyda Müzik",
             thumb=thumb_image_path,
         )
         

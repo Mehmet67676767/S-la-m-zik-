@@ -46,13 +46,13 @@ LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1002629977112"))
 
 # A name for your Music bot.
 
-MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME","sila muzik bot")
+MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME","Ceyda muzik bot")
 
 # Your User ID.
 
 OWNER_ID = list(
 
-    map(int, getenv("OWNER_ID", "7989065012").split())
+    map(int, getenv("OWNER_ID", "7761986875").split())
 
 )  # Input type must be interger
 

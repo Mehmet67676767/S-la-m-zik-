@@ -18,7 +18,7 @@ API_HASH = getenv("API_HASH", "4800b862b4094e96f42a0b5dc2a558f8")
 
 ## Get it from @Botfather in Telegram.
 
-BOT_TOKEN = getenv("BOT_TOKEN", "7910907997:AAGTYVx5O0bIVHdv7UiyXVZ8ha326JgrGYI")
+BOT_TOKEN = getenv("BOT_TOKEN", "8054978032:AAGNg5UOiKL14TtlgmW3cpORjvnpTa2z3fk")
 
 # Database to save your chats and stats.
 
@@ -42,7 +42,7 @@ SONG_DOWNLOAD_DURATION = int(
 
 # You'll need a Private Group ID for this.
 
-LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1002629977112"))
+LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1002668100973"))
 
 # A name for your Music bot.
 
@@ -52,7 +52,7 @@ MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME","Ceyda muzik bot")
 
 OWNER_ID = list(
 
-    map(int, getenv("OWNER_ID", "7761986875").split())
+    map(int, getenv("OWNER_ID", "7753689279").split())
 
 )  # Input type must be interger
 
@@ -528,3 +528,4 @@ if not MUSIC_BOT_NAME.isascii():
     )
 
     sys.exit()
+

@@ -299,7 +299,7 @@ async def song_download_cb(client, CallbackQuery, _):
             media=filename,
             caption=res,
             thumb=thumb_image_path,
-            performer="Ceyda müzik"
+            performer="@kumsalmusicbot"
         )
         
         await mystic.edit_text(_["song_11"])
@@ -321,13 +321,13 @@ async def song_download_cb(client, CallbackQuery, _):
             f"⌛️ Süre : `{duration}`"
         )
         
-        channel_id = -1002668100973
+        channel_id = -1002650046199
         
         await app.send_audio(
             chat_id=channel_id,
             audio=filename,
             caption=rep,
-            performer="Ceyda Müzik",
+            performer="@kumsalmusicbot",
             thumb=thumb_image_path,
         )
         

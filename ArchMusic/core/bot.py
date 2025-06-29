@@ -27,7 +27,7 @@ class ArchMusic(Client):
             self.id = get_me.id
 
             video_url = "https://www.kapwing.com/videos/686148e2f05fa4d65fe3cf21"
-            caption = "Bot Started"
+            caption = "bot başlatıldı"
 
             try:
                 await self.send_video(

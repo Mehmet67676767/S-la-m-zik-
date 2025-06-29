@@ -26,7 +26,7 @@ class ArchMusic(Client):
             self.username = get_me.username
             self.id = get_me.id
 
-            video_url = "https://telegra.ph/file/36221d40afde82941ffff.mp4"
+            video_url = "https://www.kapwing.com/videos/686148e2f05fa4d65fe3cf21"
             caption = "Bot Started"
 
             try:
